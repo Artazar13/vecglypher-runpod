@@ -42,3 +42,7 @@ Thumbs.db
 
 # Archive folder
 Архив/
+
+# Test folder and tokens
+Test/
+HF-token.txt
