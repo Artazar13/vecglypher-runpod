@@ -1,0 +1,44 @@
+# HuggingFace token - sensitive!
+.env
+env.txt
+
+# Large model weights and caches
+saves/
+hf_cache/
+
+# Output files
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/tmp/
+
+# Conda
+/opt/miniconda3/
+
+# Archive folder
+Архив/
