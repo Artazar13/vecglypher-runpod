@@ -10,7 +10,7 @@ STREAMLIT_PORT=8443
 WORKDIR="/workspace/VecGlypher"
 
 # Активируем conda
-source /opt/miniconda3/etc/profile.d/conda.sh
+source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate svg_glyph_llm_eval
 
 cd ${WORKDIR}
@@ -46,6 +46,9 @@ echo "✅ Открывайте: https://ВАШ_POD_ID-${STREAMLIT_PORT}.proxy.ru
 echo ""
 streamlit run src/tools/sft_data_visualizer.py \
     --server.port ${STREAMLIT_PORT} \
-    --server.address 0.0.0.0
+    --server.address 0.0.0.0 \
+    --server.enableCORS false \
+    --server.enableXsrfProtection false \
+    --server.headless true
 
 trap "kill ${VLLM_PID} 2>/dev/null" EXIT

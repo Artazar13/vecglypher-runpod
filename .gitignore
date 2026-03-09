@@ -22,6 +22,7 @@ ENV/
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb_checkpoints
+# *.ipynb — tracked (removed from ignore)
 
 # IDE
 .vscode/
